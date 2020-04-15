@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "vy-cak",
+  "hostType": "lan",
+  "lanType": "ip",
+  "dev": true,
+  "minify": false,
+  "https": false
+}
