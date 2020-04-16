@@ -1,67 +1,62 @@
 import React from "react";
-
 import { createAppContainer } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 import { Dimensions } from "react-native";
-
 import { Feather } from "@expo/vector-icons";
+import {ProfileScreen} from './screens/ProfileScreen';
+import {Reports} from './screens/Reports';
+import {SSNLookUp} from './screens/SSNLookUp';
+import {SerialNumber} from './screens/SerialNumber';
+import JobDetails from './screens/JobDetails';
+import {RiskAssessment} from './screens/RiskAssessment';
+import {RateJob} from './screens/RateJob';
 
-import {
-    ProfileScreen,
-    Reports,
-    SSNLookUp,
-    SerialNumber,
-    Jobs,
-    RiskAssessment,
-    RateJob
-} from "./screens";
 
 import SideBar from "./components/SideBar";
-
 const DrawerNavigator = createDrawerNavigator(
     {
-        Profile: {
+        ProfileScreen: {
             screen: ProfileScreen,
             navigationOptions: {
                 drawerIcon: ({ tintColor }) => <Feather name="user" size={16} color={tintColor} />
             }
         },
-        Message: {
+        Reports: {
             screen: Reports,
             navigationOptions: {
                 title: "Reports",
-                drawerIcon: ({ tintColor }) => <Feather name="message-square" size={16} color={tintColor} />
+                drawerIcon: ({ tintColor }) => <Feather name="clipboard" size={16} color={tintColor} />
             }
         },
-        Activity: {
+        SSNLookUp: {
             screen: SSNLookUp,
             navigationOptions: {
                 title:"SSNLookUp",
-                drawerIcon: ({ tintColor }) => <Feather name="activity" size={16} color={tintColor} />
+                drawerIcon: ({ tintColor }) => <Feather name="search" size={16} color={tintColor} />
             }
         },
-        List: {
+        SerialNumber: {
             screen: SerialNumber,
             navigationOptions: {
-                title: "SerialNumber",
+                title: "SerialNo",
                 drawerIcon: ({ tintColor }) => <Feather name="list" size={16} color={tintColor} />
             }
         },
-        Report: {
-            screen: Jobs,
+        JobDetails: {
+            screen: JobDetails,
             navigationOptions: {
                 title: "Jobs",
                 drawerIcon: ({ tintColor }) => <Feather name="bar-chart" size={16} color={tintColor} />
             }
         },
-        Statistic: {
+        RiskAssessment: {
             screen: RiskAssessment,
             navigationOptions: {
                 title: "RiskAssessment",
                 drawerIcon: ({ tintColor }) => <Feather name="trending-up" size={16} color={tintColor} />
             }
         },
-        SignOut: {
+        RateJob: {
             screen: RateJob,
             navigationOptions: {
                 title: "Sign Out",
