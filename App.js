@@ -19,6 +19,8 @@ const Render = createStackNavigator({
      Drawer:DrawerNavigationHolder
  });
 
+        ProfileScreen: {
+    {
 
 
 export default createAppContainer(Render);

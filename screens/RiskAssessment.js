@@ -3,4 +3,4 @@ import {View} from 'react-native';
 import Screen from './Screen';
 
 export const RiskAssessment = ({ navigation }) => 
-<Screen navigation={navigation} name="RiskAssessment123" />;
+<Screen navigation={navigation} name="RiskAssessment" />;
