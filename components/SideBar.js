@@ -9,12 +9,11 @@ export default SideBar = props => (
             source={require("../assets/background.png")}
             style={{ width: undefined, padding: 16, paddingTop: 48 }}
         >
-            <Image source={require("../assets/profile-pic.jpg")} style={styles.profile}  />
-            <Text style={styles.name}>Verser TechAPP</Text>
+            <Image source={require("../assets/Verserlogo.jpg")} style={styles.profile}  />
+            <Text style={styles.name}>VERSER TECHAPP</Text>
 
             <View style={{ flexDirection: "row" }}>
-                <Text style={styles.followers}></Text>
-                
+                <Text style={styles.followers}></Text>                
             </View>
         </ImageBackground>
 
@@ -29,9 +28,9 @@ const styles = StyleSheet.create({
         flex: 1
     },
     profile: {
-        width: 80,
+        width: 135,
         height: 80,
-        borderRadius: 40,
+        borderRadius: 10,
         borderWidth: 3,
         borderColor: "#FFF"
     },
