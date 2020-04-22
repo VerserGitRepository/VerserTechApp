@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
+
 export default class Screen extends React.Component {
     render() {
         return (

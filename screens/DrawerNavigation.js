@@ -3,7 +3,7 @@ import { createAppContainer } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 import { Dimensions } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import {ProfileScreen} from './ProfileScreen';
+import ProfileScreen from './ProfileScreen';
 import {Reports} from './Reports';
 import {SSNLookUp} from './SSNLookUp';
 import {SerialNumber} from './SerialNumber';
@@ -16,10 +16,10 @@ import ProfileScreenTabbedContainer from './ProfileScreenTabbedContainer';
 import SideBar from "../components/SideBar";
 const DrawerNavigator = createDrawerNavigator(
     {
-        ProfileScreen: {
+        Jobs: {
             screen: ProfileScreen,
             navigationOptions: {
-                drawerIcon: ({ tintColor }) => <Feather name="user" size={16} color={tintColor} />
+                drawerIcon: ({ tintColor }) => <Feather name="code" size={16} color={tintColor} />
             }
         },
         Reports: {
