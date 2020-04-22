@@ -10,6 +10,7 @@ import {SerialNumber} from './SerialNumber';
 import JobDetails from './JobDetails';
 import {RiskAssessment} from './RiskAssessment';
 import {RateJob} from './RateJob';
+import ProfileScreenTabbedContainer from './ProfileScreenTabbedContainer';
 
 
 import SideBar from "../components/SideBar";

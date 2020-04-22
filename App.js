@@ -17,10 +17,15 @@ import DrawerNavigationHolder from "./screens/DrawerNavigationHolder";
 const Render = createStackNavigator({
      Login:LoginScreen,
      Drawer:DrawerNavigationHolder
+ },
+ {
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
+  }
  });
 
-        ProfileScreen: {
-    {
+       
 
 
 export default createAppContainer(Render);

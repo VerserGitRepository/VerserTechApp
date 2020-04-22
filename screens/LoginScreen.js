@@ -119,4 +119,17 @@ const styles = StyleSheet.create({
   },
 });
 
-export default memo(LoginScreen);
+
+LoginScreen.navigationOptions = {
+    headerTitle:"Verser TechApp Login",
+    headerTitleAlign:"Center",
+
+    headerStyle:{
+        backgroundColor:"#F79435",
+    },
+    headerTitleStyle: {
+        color: 'white'
+      }
+};
+
+export default LoginScreen;
